@@ -1,0 +1,9 @@
+services:
+  tracker:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATA_DIR: /data
+    volumes:
+      - ./data:/data   # база переживает перезапуск
