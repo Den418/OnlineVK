@@ -1,3 +1,2 @@
 aiohttp>=3.9
 python-dotenv>=1.0
-tzdata  # база часовых поясов (нужна на Windows и в минимальных образах)
